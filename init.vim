@@ -56,7 +56,7 @@ filetype plugin indent on    " required
 
 syntax on
 set relativenumber number
-set tabstop=2 smarttab softtabstop=2 shiftwidth=2
+set tabstop=2 smarttab softtabstop=2 shiftwidth=2 expandtab
 set autoindent smartindent
 set cursorline
 set wildmenu showcmd showmatch

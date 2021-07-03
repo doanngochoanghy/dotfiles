@@ -24,7 +24,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -85,6 +85,11 @@ plugins=(
 	tmux
 	sudo
 	pipenv
+	jump
+	git-flow
+	screen
+	zsh_reload
+	zsh-interactive-cd
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -116,11 +121,28 @@ alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias bashconfig="nvim ~/.bashrc"
 alias vimconfig="nvim ~/.vimrc"
+alias nvimconfig="nvim ~/.config/nvim/init.vim"
 alias tmuxconfig="vim ~/.tmux.conf"
 alias sshconfig="vim ~/.ssh/config"
-alias nv="nvim"
+alias v="nvim"
 
-no_proxy=localhost,visc.com,viettel.com,viettel.com.vn,sirc.com,gitlab.visc.com
+alias unset_proxy='unset http_proxy && unset https_proxy && unset HTTP_PROXY && unset HTTPS_PROXY && echo "unset proxy success"'
+alias set_proxy='export http_proxy=192.168.5.8:3128 && export HTTP_PROXY=192.168.5.8:3128 && export https_proxy=192.168.5.8:3128 && export socks_proxy=192.168.5.8:3128 && export HTTPS_PROXY=192.168.5.8:3128 && echo "set proxy success"'
+no_proxy=localhost,visc.com,viettel.com,viettel.com.vn,sirc.com,dev.iml.sirc.viettel.com,.viettelcyber.com
+NO_PROXY=localhost,visc.com,viettel.com,viettel.com.vn,sirc.com,dev.iml.sirc.viettel.com,.viettelcyber.com
+export http_proxy=192.168.5.8:3128
+export HTTP_PROXY=192.168.5.8:3128
+export https_proxy=192.168.5.8:3128
+export socks_proxy=192.168.5.8:3128
+export HTTPS_PROXY=192.168.5.8:3128
+export PIPENV_SKIP_LOCK=true
+export PIPENV_ACTIVE=1
+export CLASSPATH=".:/usr/local/lib/antlr4-4.7.2-complete.jar:$CLASSPATH"
+alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr4-4.7.2-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
+alias grun='java org.antlr.v4.gui.TestRig'
+alias pipenv_dev_install='pipenv install flake8 autopep8 jedi isort python-language-server pytest rope --dev'
+PATH=$PATH:/home/hoangdn6/.local/bin
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
