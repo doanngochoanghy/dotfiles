@@ -89,6 +89,7 @@ plugins=(
 	screen
 	zsh_reload
 	zsh-interactive-cd
+  z
 )
 
 source $ZSH/oh-my-zsh.sh
