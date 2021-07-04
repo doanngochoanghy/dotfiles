@@ -8,12 +8,7 @@ vnoremap > >gv  " better indentation
 "save,edit and quit file
 nmap <leader>q :q<CR>
 nmap <leader>Q :q!<CR>
-nmap <leader>e :edit<Space>
 nmap <leader>w :w<CR>
-vmap <leader>q <Esc><leader>qgv
-vmap <leader>Q <Esc><leader>Q
-vmap <leader>e <Esc><leader>e
-vmap <leader>w <Esc><leader>wgv
 
 "NERDTree navigation
 nmap <leader>p :NERDTreeToggle<CR>
@@ -50,11 +45,8 @@ nnoremap <leader>= :wincmd =<cr>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-
+" Replace
 nnoremap <leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
-
-" greatest remap ever
-vnoremap <leader>p "_dP
 
 " next greatest remap ever : asbjornHaland
 nnoremap <leader>y "+y
@@ -65,10 +57,3 @@ inoremap <C-c> <esc>
 
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
-
-" CtrlP
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|pytest\|vim'
-
-""" Settings supertab
-let g:SuperTabDefaultCompletionType = "<c-n>"

@@ -46,7 +46,7 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
@@ -84,7 +84,6 @@ plugins=(
 	alias-finder
 	tmux
 	sudo
-	pipenv
 	jump
 	git-flow
 	screen
@@ -128,15 +127,14 @@ alias v="nvim"
 
 alias unset_proxy='unset http_proxy && unset https_proxy && unset HTTP_PROXY && unset HTTPS_PROXY && echo "unset proxy success"'
 alias set_proxy='export http_proxy=192.168.5.8:3128 && export HTTP_PROXY=192.168.5.8:3128 && export https_proxy=192.168.5.8:3128 && export socks_proxy=192.168.5.8:3128 && export HTTPS_PROXY=192.168.5.8:3128 && echo "set proxy success"'
-no_proxy=localhost,visc.com,viettel.com,viettel.com.vn,sirc.com,dev.iml.sirc.viettel.com,.viettelcyber.com
-NO_PROXY=localhost,visc.com,viettel.com,viettel.com.vn,sirc.com,dev.iml.sirc.viettel.com,.viettelcyber.com
-export http_proxy=192.168.5.8:3128
-export HTTP_PROXY=192.168.5.8:3128
-export https_proxy=192.168.5.8:3128
-export socks_proxy=192.168.5.8:3128
-export HTTPS_PROXY=192.168.5.8:3128
+# no_proxy=localhost,visc.com,viettel.com,viettel.com.vn,sirc.com,dev.iml.sirc.viettel.com,.viettelcyber.com
+# NO_PROXY=localhost,visc.com,viettel.com,viettel.com.vn,sirc.com,dev.iml.sirc.viettel.com,.viettelcyber.com
+# export http_proxy=192.168.5.8:3128
+# export HTTP_PROXY=192.168.5.8:3128
+# export https_proxy=192.168.5.8:3128
+# export socks_proxy=192.168.5.8:3128
+# export HTTPS_PROXY=192.168.5.8:3128
 export PIPENV_SKIP_LOCK=true
-export PIPENV_ACTIVE=1
 export CLASSPATH=".:/usr/local/lib/antlr4-4.7.2-complete.jar:$CLASSPATH"
 alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr4-4.7.2-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
 alias grun='java org.antlr.v4.gui.TestRig'
