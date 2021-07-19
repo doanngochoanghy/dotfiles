@@ -11,8 +11,8 @@ nmap <leader>Q :q!<CR>
 nmap <leader>w :w<CR>
 
 "NERDTree navigation
-nmap <leader>p :NERDTreeToggle<CR>
-vmap <leader>p <Esc><leader>ngv
+nmap <leader>n :NERDTreeFind<CR>
+vmap <leader>n <Esc><leader>ngv
 let g:NERDTreeRespectWildIgnore = 1
 let NERDTreeWinSize = 20
 let g:NERDTreeGitStatusShowIgnored = 0
@@ -50,7 +50,9 @@ nnoremap <leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
 
 " next greatest remap ever : asbjornHaland
 nnoremap <leader>y "+y
+nnoremap <leader>p "+p
 vnoremap <leader>y "+y
+vnoremap <leader>p "+p
 nnoremap <leader>Y gg"+yG
 vnoremap <C-c> "+y
 inoremap <C-c> <esc>

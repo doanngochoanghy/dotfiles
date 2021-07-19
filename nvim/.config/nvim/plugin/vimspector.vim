@@ -20,6 +20,7 @@ nnoremap <leader>dtcb :call vimspector#CleanLineBreakpoint()<CR>
 nmap <leader>dl <Plug>VimspectorStepInto
 nmap <leader>dj <Plug>VimspectorStepOver
 nmap <leader>dk <Plug>VimspectorStepOut
+nmap <leader>dw :VimspectorWatch <C-r><C-w>
 nmap <leader>d_ <Plug>VimspectorRestart
 nnoremap <leader>d<space> :call vimspector#Continue()<CR>
 
