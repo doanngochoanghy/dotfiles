@@ -86,6 +86,7 @@ plugins=(
   z
   docker
   docker-compose
+	zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
