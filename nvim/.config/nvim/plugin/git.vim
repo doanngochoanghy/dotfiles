@@ -5,4 +5,5 @@ nnoremap <leader>grom :Git rebase origin/master<CR>
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
 map gst :G<CR>
+map git :G 
 
