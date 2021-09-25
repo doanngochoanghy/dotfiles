@@ -46,6 +46,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'fatih/vim-go'
+
 
 call plug#end()
 filetype plugin indent on    " required

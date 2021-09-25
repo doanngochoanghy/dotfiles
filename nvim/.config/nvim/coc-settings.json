@@ -15,5 +15,12 @@
   "coc.preferences.formatOnSaveFiletypes": ["python", "json", "yaml"],
   "coc.preferences.formatOnType": true,
   "prettier.disableSuccessMessage": true,
-  "diagnostic.signPriority": 10
+  "diagnostic.signPriority": 10,
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    }
+  }
 }
