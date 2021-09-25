@@ -19,6 +19,7 @@ set wildignore+=**/.hg/*
 set wildignore+=**/.svn/*
 set wildignore+=**/.env/*
 set wildignore+=**/*.sw*       " Linux/MacOSX
+set noswapfile
 
 set nocompatible              " be iMproved, required
 filetype off                  " required

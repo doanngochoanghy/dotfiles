@@ -7,7 +7,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ubuntu/hoangdn6/ohmyzsh"
+export ZSH="/home/hoangdn6/Documents/Projects/ohmyzsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -138,7 +138,12 @@ export CLASSPATH=".:/usr/local/lib/antlr4-4.7.2-complete.jar:$CLASSPATH"
 alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr4-4.7.2-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
 alias grun='java org.antlr.v4.gui.TestRig'
 alias pipenv_dev_install='pipenv install flake8 autopep8 jedi isort python-language-server pytest rope --dev'
-PATH=$PATH:/home/ubuntu/hoangdn6/dotfiles/nvim-linux64/bin
+PATH=$PATH:/home/hoangdn6/.local/bin:/home/hoangdn6/jdk-16.0.2/bin:/usr/local/go/bin
+SOLR_HOME=/home/hoangdn6/solr-8.9.0
+NUTCH_HOME=/home/hoangdn6/apache-nutch-1.18
+JAVA_HOME=/home/hoangdn6/jdk-16.0.2
+export GOPATH=$HOME/Documents/Projects/go
+export GOBIN=$HOME/Documents/Projects/go/bin
 GITSTATUS_LOG_LEVEL=DEBUG
 
 
